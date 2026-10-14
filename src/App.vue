@@ -11,7 +11,7 @@ const router = useRouter()
 const { user, logout } = useAuth()
 
 const showHeader = computed(() => {
-  return !['Login', 'NotFound'].includes(route.name)
+  return route.name !== 'Login'
 })
 
 function signOut() {

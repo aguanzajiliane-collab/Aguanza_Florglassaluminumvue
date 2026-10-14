@@ -21,7 +21,8 @@ const links = [
   { label: 'Home', to: '/' },
   { label: 'Products', to: '/products' },
   { label: 'About', to: '/about' },
-  { label: 'Contact', to: '/contact' }
+  { label: 'Contact', to: '/contact' },
+  { label: 'CRUD Demo', to: '/manage-products' }
 ]
 </script>
 

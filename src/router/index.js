@@ -14,7 +14,7 @@ import Contact from '../pages/Contact.vue'
 import Cart from '../pages/Cart.vue'
 import Login from '../pages/Login.vue'
 import Logout from '../pages/Logout.vue'
-import NotFound from '../pages/NotFound.vue'
+import ProductManager from '../pages/ProductManager.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -50,6 +50,7 @@ const router = createRouter({
       name: 'Contact',
       component: Contact
     },
+    { path: '/manage-products', name: 'ProductManager', component: ProductManager },
     {
       path: '/cart',
       name: 'Cart',
@@ -77,7 +78,7 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
-      component: NotFound
+      redirect: { name: 'Home' }
     }
   ]
 })
